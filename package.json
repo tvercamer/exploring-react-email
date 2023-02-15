@@ -1,0 +1,10 @@
+{
+  "name": "react-emails",
+  "version": "1.0.0",
+  "description": "Playing around with the react-email library",
+  "main": "emails/index.tsx",
+  "repository": "https://github.com/tvercamer/exploring-react-email",
+  "author": "Thomas Vercamer",
+  "license": "MIT",
+  "private": false
+}
