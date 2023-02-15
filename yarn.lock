@@ -160,6 +160,13 @@
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-compose-refs" "1.0.0"
 
+"@react-email/body@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@react-email/body/-/body-0.0.1.tgz#726420a35fcc7f89323dcb07e3760eae75347f3e"
+  integrity sha512-m4oWEI0HYXI8hAUOPQG5PY3LIyxA7ruX6EhU6lz7tWkjaAojqkVBh0ZKhUHj5WHM/BV/fMuws7cbnhC6tQccCA==
+  dependencies:
+    react "18.2.0"
+
 "@react-email/button@0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@react-email/button/-/button-0.0.6.tgz#3f0b84b03d2253a3a4204312755b65004c021afc"
@@ -197,6 +204,13 @@
     react "18.2.0"
     utils "*"
 
+"@react-email/hr@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@react-email/hr/-/hr-0.0.4.tgz#f346b00f1c7ba9c22064635e2b1645c721837e27"
+  integrity sha512-TLx68FxSvtbet2XlHqlEaT/NMSwCXvqLJY7/+4Mz0p3eefkYKdkJ+aDfSus5l1y3g89Igbue7LJ881v/Krpshw==
+  dependencies:
+    react "18.2.0"
+
 "@react-email/html@0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@react-email/html/-/html-0.0.4.tgz#3de13cad8c1f4c487227b3f8fd79e790d239d8c0"
@@ -206,6 +220,13 @@
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@react-email/img/-/img-0.0.4.tgz#1500e5c5b1d00cbb99c8ceac6566e34dad5a8817"
   integrity sha512-ILiCdm/rBqUzpptFr180wWohrFtKL3EsvUnjH61GDfOMgJWhdE7G9JOW/GqmL3nw++cnwC54dkEYXUjUpf8gpQ==
+  dependencies:
+    react "18.2.0"
+
+"@react-email/link@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@react-email/link/-/link-0.0.4.tgz#46f209a010f097082dd96e71645ae5ea017a1e06"
+  integrity sha512-4m3PmGsfAUn6/4PmbpW0JkcrIalFkQjWp5SS4w17NQ4FyDmwoojppdYVu7WhUpLj81vL1MkOpAYBojGwv7s8Qg==
   dependencies:
     react "18.2.0"
 
@@ -225,6 +246,11 @@
     pretty "2.0.0"
     react "18.2.0"
     react-dom "18.2.0"
+
+"@react-email/row@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@react-email/row/-/row-0.0.2.tgz#091bc4e30c92b0372e378c8a57c5d3fc14e6cc6c"
+  integrity sha512-qAb5n6/KdIL1qYXxYoZZ45ym3+iUfG2yksxFBeWP9/cbwx72VCnXDM8YKinC9Ys/2et2ccOub4M/zQ2AggBeig==
 
 "@react-email/section@0.0.8":
   version "0.0.8"
