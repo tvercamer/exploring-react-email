@@ -29,10 +29,9 @@ const styles = {
   logo: {
     padding: "20px 30px",
   },
-  section: (background = "#FFFFFF", hasBottomPadding = true, center=false) => ({
+  section: (background = "#FFFFFF", hasBottomPadding = true) => ({
     backgroundColor: background,
     padding: hasBottomPadding ? "30px" : "30px 30px 0 30px",
-    textAlign: center ? "center" : "left",
     title: {
       textAlign: "center",
       margin: "0 0 32px 0",
@@ -165,40 +164,125 @@ export default function Email() {
             </Heading>
             <Text>
               P.S. For weekly updates or to start a converstation with us,
-              connect on <Link href="https://linkedin.com">LinkedIn</Link> or{" "}
-              <Link href="https://twitter.com">Twitter</Link>!
+              connect on{" "}
+              <Link
+                href="https://linkedin.com"
+                style={{ textDecoration: "underline", color: "black" }}
+              >
+                LinkedIn
+              </Link>{" "}
+              or{" "}
+              <Link
+                href="https://twitter.com"
+                style={{ textDecoration: "underline", color: "black" }}
+              >
+                Twitter
+              </Link>
+              !
             </Text>
           </Section>
           <Hr />
 
           {/* ---------- Footer ---------- */}
-          <Section style={styles.section("white", false, true)}>
+          <Section style={styles.section("white", false)}>
             {/* ---------- Footer: Logo ---------- */}
             <Row>
-                <Img
-                  src="https://storage.mlcdn.com/account_image/131667/q4IW8JhBPMk2QI6vWK9AjpyEkbkhXp3XLBFWcaVK.png"
-                  alt="1000 Email Ideas"
-                  height="100px"
-                />
+              <Column style={{ textAlign: "center" }}>
+                <Link href="https://1000emailideas.com/">
+                  <Img
+                    src="https://storage.mlcdn.com/account_image/131667/q4IW8JhBPMk2QI6vWK9AjpyEkbkhXp3XLBFWcaVK.png"
+                    alt="1000 Email Ideas"
+                    height="100px"
+                    width="100px"
+                    style={{ display: "inline-block" }}
+                  />
+                </Link>
+              </Column>
             </Row>
 
             {/* ---------- Footer: Social Media ---------- */}
             <Row>
-              <Column>SHARE TO FACEBOOK</Column>
-              <Column>SHARE TO TWITTER</Column>
-              <Column>FORWARD EMAIL</Column>
+              <Column>
+                <Link
+                  href="https://www.facebook.com"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    color: "black",
+                  }}
+                >
+                  <Img
+                    src="https://cdn-icons-png.flaticon.com/512/2168/2168281.png"
+                    alt="Facebook"
+                    width="20px"
+                    height="20px"
+                  />
+                  <Text>SHARE TO FACEBOOK</Text>
+                </Link>
+              </Column>
+              <Column>
+                <Link
+                  href="https://www.twitter.com"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    color: "black",
+                  }}
+                >
+                  <Img
+                    src="https://cdn-icons-png.flaticon.com/512/2168/2168336.png"
+                    alt="Twitter"
+                    width="20px"
+                    height="20px"
+                  />
+                  <Text>SHARE TO TWITTER</Text>
+                </Link>
+              </Column>
+              <Column>
+                <Link
+                  href="https://www.twitter.com"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    color: "black",
+                  }}
+                >
+                  <Img
+                    src="https://cdn-icons-png.flaticon.com/512/318/318476.png"
+                    alt="Arrow right"
+                    width="20px"
+                    height="20px"
+                  />
+                  <Text>FORWARD EMAIL</Text>
+                </Link>
+              </Column>
             </Row>
 
             {/* ---------- Footer: Address ---------- */}
             <Row>
-              <p>1000 Email Ideas</p>
-              <p>548 Market St, San Francisco, CA</p>
+              <Text style={{ textAlign: "center" }}>
+                <span style={{ fontWeight: "bold" }}>1000 Email Ideas</span>
+                <br />
+                548 Market St, San Francisco, CA
+              </Text>
             </Row>
 
             {/* ---------- Footer: Legal ---------- */}
             <Row>
-              <p>You received this email because you subsribed.</p>
-              <p>Unsubscribe</p>
+              <Text style={{ textAlign: "center" }}>
+                You received this email because you subscribed.
+              </Text>
+              <Text style={{ textAlign: "center" }}>
+                <Link
+                  href="#"
+                  style={{ textDecoration: "underline", color: "black" }}
+                >
+                  Unsubscribe
+                </Link>
+              </Text>
             </Row>
           </Section>
         </Container>
